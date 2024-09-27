@@ -88,20 +88,20 @@
   */
   export default function ListUserComponent({ users }) {
     return (
-      <div className="mt-6">
+      <div className="mt-6 ">
         {users.map((user, index) => (
           <div
             key={index}
-            className="flex justify-between border-b py-2"
+            className="flex justify-between border-b py-2 my-4 px-4"
           >
-            <div className="w-1/2">
-              <p><strong>Name:</strong> {user.firstName} {user.lastName}</p>
-              <p><strong>Email:</strong> {user.email}</p>
+            <div className="w-1/2 mr-4">
+              <p className="mb-2"><strong>Name:</strong> {user.firstName} {user.lastName}</p>
+              <p className="mb-2"><strong>Email:</strong> {user.email}</p>
             </div>
-            <div className="w-1/2">
-              <p><strong>Company:</strong> {user.company}</p>
-              <p><strong>Phone:</strong> {user.phoneNumber}</p>
-              <p><strong>Message:</strong> {user.message}</p>
+            <div className="w-1/2 ml-4">
+              <p className="mb-2"><strong>Company:</strong> {user.company}</p>
+              <p className="mb-2"><strong>Phone:</strong> {user.phoneNumber}</p>
+              <p className="mb-2"><strong>Message:</strong> {user.message}</p>
             </div>
           </div>
         ))}
